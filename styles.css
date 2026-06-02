@@ -216,11 +216,11 @@ body {
 }
 
 .feature-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 64px;
+  gap: 80px;
 }
 
 .feature-section.reverse .feature-container {
@@ -282,7 +282,7 @@ body {
 }
 
 .feature-visual {
-  flex: 1.2;
+  flex: 1.6;
   position: relative;
 }
 
