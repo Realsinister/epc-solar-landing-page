@@ -306,6 +306,106 @@ body {
   box-shadow: 0 20px 40px -10px rgba(139, 92, 246, 0.15);
 }
 
+/* Roadmap Section */
+.roadmap-section {
+  padding: 100px 24px;
+  position: relative;
+  background: radial-gradient(circle at 50% 100%, rgba(139, 92, 246, 0.05), transparent 70%);
+}
+
+.roadmap-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-highlight), transparent);
+}
+
+.roadmap-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.roadmap-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.roadmap-subtitle {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.roadmap-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
+}
+
+.roadmap-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-highlight);
+  background: var(--bg-card-hover);
+}
+
+.roadmap-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.roadmap-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.roadmap-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.development-notice {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 12px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--accent-blue);
+  font-size: 0.95rem;
+}
+
+.development-notice p {
+  color: var(--text-muted);
+}
+
+.development-notice strong {
+  color: var(--accent-blue);
+}
+
 /* Footer */
 .footer {
   border-top: 1px solid var(--border-light);
@@ -363,6 +463,11 @@ body {
   
   .feature-visual {
     width: 100%;
+  }
+
+  .roadmap-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
   
   .footer-content {
