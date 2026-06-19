@@ -13,7 +13,7 @@ To protect proprietary algorithms and extensive dataset licensing, the Alpha Dem
 - **Optimization Scenario:** Hard-locked to the "Eco-Flagship (Minimize Carbon)" scenario.
 - **Project Scope:** Maximum project size capped at 5 MWp.
 
-📥 **[Download the Alpha Demo (Windows Executable) in the Releases Tab](#)**
+📥 **[Download the Alpha Demo (Windows Executable) in the Releases Tab](https://github.com/Realsinister/epc-solar-landing-page/releases)**
 
 *(Note: The downloadable executable is a fully native, Nuitka-compiled binary containing the proprietary physics engine and PyArrow database).*
 
