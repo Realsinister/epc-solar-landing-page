@@ -21,7 +21,7 @@ We have released a sandboxed **Alpha Demo** for public testing and portfolio dem
 - **Optimization Scenario:** Hard-locked to the "Eco-Flagship (Minimize Carbon)" scenario.
 - **Project Scope:** Maximum project size capped at 5 MWp.
 
-📥 **[Download the Alpha Demo (Windows Executable) in the Releases Tab](https://github.com/Realsinister/epc-solar-landing-page/releases)**
+📥 **[Download the Alpha Demo (Windows Executable) in the Releases Tab](https://github.com/Realsinister/solar-ai-engine/releases)**
 
 ---
 
