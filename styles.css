@@ -152,14 +152,36 @@ body {
   box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
 }
 
-.disclaimer {
-  font-size: 0.85rem;
+.ip-disclaimer {
+  font-size: 0.9rem;
   color: var(--text-muted);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
   animation: fadeUp 0.8s ease-out 0.4s both;
+  background: rgba(239, 68, 68, 0.05);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  padding: 16px 24px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ip-disclaimer .asterisk {
+  color: #ef4444;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.ip-disclaimer p {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.ip-disclaimer strong {
+  color: #ef4444;
 }
 
 /* 3D Visual Presentation */
@@ -304,6 +326,85 @@ body {
 
 .shadow-purple {
   box-shadow: 0 20px 40px -10px rgba(139, 92, 246, 0.15);
+}
+
+/* Tech Specs Section */
+.tech-section {
+  padding: 100px 24px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.tech-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-light), transparent);
+}
+
+.tech-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.tech-subtitle {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+.tech-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-highlight);
+  background: var(--bg-card-hover);
+}
+
+.tech-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.tech-icon.blue { background: rgba(59, 130, 246, 0.1); color: var(--accent-blue); border: 1px solid rgba(59, 130, 246, 0.2); }
+.tech-icon.purple { background: rgba(139, 92, 246, 0.1); color: var(--accent-purple); border: 1px solid rgba(139, 92, 246, 0.2); }
+.tech-icon.cyan { background: rgba(6, 182, 212, 0.1); color: var(--accent-cyan); border: 1px solid rgba(6, 182, 212, 0.2); }
+
+.tech-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.tech-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* Roadmap Section */
